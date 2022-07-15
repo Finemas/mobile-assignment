@@ -16,9 +16,12 @@ extension Date {
         self.init(timeInterval: 0, since: date)
     }
 
+    // Convert date to locale date format
     func stringFormat(format: String) -> String {
+        let dateFormat = DateFormatter.dateFormat(fromTemplate: format, options: 0, locale: Locale.current)
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = format
+        dateFormatter.dateFormat = dateFormat
+        dateFormatter.locale = .current
         return dateFormatter.string(from: self)
     }
 }

@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  SpaceX
+
+  Created by Jan Provaznik on 15.07.2022.
+  
+*/
+
+// Rockets list view
+"rockets_title" = "Rakety";
+"rockets_first_flight %@" = "První let: %@";
