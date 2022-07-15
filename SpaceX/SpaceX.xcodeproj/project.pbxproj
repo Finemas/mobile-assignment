@@ -20,6 +20,8 @@
 		16DCE5062881D0BE00D9E9F5 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE5052881D0BE00D9E9F5 /* Date+.swift */; };
 		16DCE5092881E76900D9E9F5 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE5082881E76900D9E9F5 /* Icons.swift */; };
 		16DCE50B2881E8D800D9E9F5 /* RocketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE50A2881E8D800D9E9F5 /* RocketCell.swift */; };
+		16DCE5102881EA9400D9E9F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16DCE5122881EA9400D9E9F5 /* Localizable.strings */; };
+		16DCE5142881EAFE00D9E9F5 /* LocalizedStringKey+keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE5132881EAFE00D9E9F5 /* LocalizedStringKey+keys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		16DCE5052881D0BE00D9E9F5 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		16DCE5082881E76900D9E9F5 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		16DCE50A2881E8D800D9E9F5 /* RocketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketCell.swift; sourceTree = "<group>"; };
+		16DCE5112881EA9400D9E9F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		16DCE5132881EAFE00D9E9F5 /* LocalizedStringKey+keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedStringKey+keys.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				16DCE4C12881C93E00D9E9F5 /* Assets.xcassets */,
+				16DCE5122881EA9400D9E9F5 /* Localizable.strings */,
 				16DCE4C32881C93E00D9E9F5 /* Preview Content */,
 			);
 			path = SupportingFiles;
@@ -253,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				16DCE5082881E76900D9E9F5 /* Icons.swift */,
+				16DCE5132881EAFE00D9E9F5 /* LocalizedStringKey+keys.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -362,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16DCE4C52881C93E00D9E9F5 /* Preview Assets.xcassets in Resources */,
+				16DCE5102881EA9400D9E9F5 /* Localizable.strings in Resources */,
 				16DCE4C22881C93E00D9E9F5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +400,7 @@
 				16DCE5012881CCC500D9E9F5 /* RocketsListViewModel.swift in Sources */,
 				16DCE50B2881E8D800D9E9F5 /* RocketCell.swift in Sources */,
 				16DCE4FE2881CCA100D9E9F5 /* RocketsListView.swift in Sources */,
+				16DCE5142881EAFE00D9E9F5 /* LocalizedStringKey+keys.swift in Sources */,
 				16DCE5032881CE3500D9E9F5 /* Rocket+instances.swift in Sources */,
 				16DCE4BE2881C93D00D9E9F5 /* SpaceXApp.swift in Sources */,
 			);
@@ -429,6 +437,17 @@
 			targetProxy = 16DCE4D52881C93E00D9E9F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16DCE5122881EA9400D9E9F5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16DCE5112881EA9400D9E9F5 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		16DCE4DC2881C93E00D9E9F5 /* Debug */ = {

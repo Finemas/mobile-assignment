@@ -9,9 +9,9 @@ import SwiftUI
 
 struct RocketCell: View {
     let rocket: Rocket
-    var firstFlight: String {
+    var firstFlight: LocalizedStringKey {
         let date = rocket.firstFlight.stringFormat(format: "dd.MM.yyyy")
-        return "First flight: \(date)"
+        return .RocketsListView.firstFlight(date: date)
     }
 
     var body: some View {

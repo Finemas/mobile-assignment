@@ -20,7 +20,7 @@ struct RocketsListView: View {
                         RocketCell(rocket: rocket)
                     }
                 }
-            }.navigationTitle("Rockets")
+            }.navigationTitle(.RocketsListView.title)
         }
     }
 }
