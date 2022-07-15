@@ -9,9 +9,25 @@ import SwiftUI
 
 @main
 struct SpaceXApp: App {
+    var isDebug = true
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isDebug {
+                RocketsListView(
+                    viewModel:
+                        RocketsListViewModel(
+                            rockets: Rocket.all
+                        )
+                )
+            } else {
+                RocketsListView(
+                    viewModel:
+                        RocketsListViewModel(
+                            rockets: []
+                        )
+                )
+            }
         }
     }
 }

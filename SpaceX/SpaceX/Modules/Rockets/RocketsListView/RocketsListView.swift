@@ -11,10 +11,16 @@ struct RocketsListView: View {
     @ObservedObject var viewModel: RocketsListViewModel
     
     var body: some View {
-        List {
-            ForEach(viewModel.rockets) { rocket in
-                RocketCell(rocket: rocket)
-            }
+        NavigationView {
+            List {
+                ForEach(viewModel.rockets) { rocket in
+                    NavigationLink {
+                        Text("Detail")
+                    } label: {
+                        RocketCell(rocket: rocket)
+                    }
+                }
+            }.navigationTitle("Rockets")
         }
     }
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		16DCE4BE2881C93D00D9E9F5 /* SpaceXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE4BD2881C93D00D9E9F5 /* SpaceXApp.swift */; };
-		16DCE4C02881C93D00D9E9F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE4BF2881C93D00D9E9F5 /* ContentView.swift */; };
 		16DCE4C22881C93E00D9E9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DCE4C12881C93E00D9E9F5 /* Assets.xcassets */; };
 		16DCE4C52881C93E00D9E9F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DCE4C42881C93E00D9E9F5 /* Preview Assets.xcassets */; };
 		16DCE4CF2881C93E00D9E9F5 /* SpaceXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE4CE2881C93E00D9E9F5 /* SpaceXTests.swift */; };
@@ -43,7 +42,6 @@
 /* Begin PBXFileReference section */
 		16DCE4BA2881C93D00D9E9F5 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DCE4BD2881C93D00D9E9F5 /* SpaceXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXApp.swift; sourceTree = "<group>"; };
-		16DCE4BF2881C93D00D9E9F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16DCE4C12881C93E00D9E9F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16DCE4C42881C93E00D9E9F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16DCE4CA2881C93E00D9E9F5 /* SpaceXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +106,6 @@
 		16DCE4BC2881C93D00D9E9F5 /* SpaceX */ = {
 			isa = PBXGroup;
 			children = (
-				16DCE5072881E75E00D9E9F5 /* Utils */,
 				16DCE4EE2881CA4200D9E9F5 /* App */,
 				16DCE4EA2881C9F500D9E9F5 /* Components */,
 				16DCE5042881D0A700D9E9F5 /* Extensions */,
@@ -117,6 +114,7 @@
 				16DCE4E92881C9EF00D9E9F5 /* Models */,
 				16DCE4E72881C9C000D9E9F5 /* Modules */,
 				16DCE4E82881C9DF00D9E9F5 /* SupportingFiles */,
+				16DCE5072881E75E00D9E9F5 /* Utils */,
 			);
 			path = SpaceX;
 			sourceTree = "<group>";
@@ -206,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				16DCE4BD2881C93D00D9E9F5 /* SpaceXApp.swift */,
-				16DCE4BF2881C93D00D9E9F5 /* ContentView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -395,7 +392,6 @@
 				16DCE5092881E76900D9E9F5 /* Icons.swift in Sources */,
 				16DCE5012881CCC500D9E9F5 /* RocketsListViewModel.swift in Sources */,
 				16DCE50B2881E8D800D9E9F5 /* RocketCell.swift in Sources */,
-				16DCE4C02881C93D00D9E9F5 /* ContentView.swift in Sources */,
 				16DCE4FE2881CCA100D9E9F5 /* RocketsListView.swift in Sources */,
 				16DCE5032881CE3500D9E9F5 /* Rocket+instances.swift in Sources */,
 				16DCE4BE2881C93D00D9E9F5 /* SpaceXApp.swift in Sources */,
