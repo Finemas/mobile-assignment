@@ -9,8 +9,16 @@ import Combine
 
 class RocketsListViewModel: ObservableObject {
     @Published var rockets: [Rocket]
+    @Published var searchText = ""
+    var filteredRockets: [Rocket] {
+        if searchText.isEmpty {
+            return rockets
+        } else {
+            return rockets.filter { $0.name.contains(searchText) }
+        }
+    }
 
-    init(rockets: [Rocket]) {
+    init(rockets: [Rocket] = []) {
         self.rockets = rockets
     }
 }

@@ -13,17 +13,20 @@ struct RocketsListView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.rockets) { rocket in
+                ForEach(viewModel.filteredRockets) { rocket in
                     NavigationLink {
                         Text("Detail")
                     } label: {
                         RocketCell(rocket: rocket)
                     }
                 }
-            }.navigationTitle(.RocketsListView.title)
+            }
+            .searchable(text: $viewModel.searchText)
+            .navigationTitle(.RocketsListView.title)
         }
     }
 }
+
 
 struct RocketsListView_Previews: PreviewProvider {
     static var previews: some View {

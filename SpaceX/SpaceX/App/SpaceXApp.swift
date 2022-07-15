@@ -21,12 +21,7 @@ struct SpaceXApp: App {
                         )
                 )
             } else {
-                RocketsListView(
-                    viewModel:
-                        RocketsListViewModel(
-                            rockets: []
-                        )
-                )
+                RocketsListView(viewModel: RocketsListViewModel())
             }
         }
     }
