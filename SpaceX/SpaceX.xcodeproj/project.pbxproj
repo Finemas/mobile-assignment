@@ -94,10 +94,13 @@
 		16DCE4BC2881C93D00D9E9F5 /* SpaceX */ = {
 			isa = PBXGroup;
 			children = (
-				16DCE4BD2881C93D00D9E9F5 /* SpaceXApp.swift */,
-				16DCE4BF2881C93D00D9E9F5 /* ContentView.swift */,
-				16DCE4C12881C93E00D9E9F5 /* Assets.xcassets */,
-				16DCE4C32881C93E00D9E9F5 /* Preview Content */,
+				16DCE4EE2881CA4200D9E9F5 /* App */,
+				16DCE4EA2881C9F500D9E9F5 /* Components */,
+				16DCE4EB2881CA1400D9E9F5 /* Managers */,
+				16DCE4F32881CB1200D9E9F5 /* Mock */,
+				16DCE4E92881C9EF00D9E9F5 /* Models */,
+				16DCE4E72881C9C000D9E9F5 /* Modules */,
+				16DCE4E82881C9DF00D9E9F5 /* SupportingFiles */,
 			);
 			path = SpaceX;
 			sourceTree = "<group>";
@@ -125,6 +128,75 @@
 				16DCE4DA2881C93E00D9E9F5 /* SpaceXUITestsLaunchTests.swift */,
 			);
 			path = SpaceXUITests;
+			sourceTree = "<group>";
+		};
+		16DCE4E72881C9C000D9E9F5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				16DCE4ED2881CA3A00D9E9F5 /* Launch */,
+				16DCE4EC2881CA2700D9E9F5 /* Rockets */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		16DCE4E82881C9DF00D9E9F5 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				16DCE4C12881C93E00D9E9F5 /* Assets.xcassets */,
+				16DCE4C32881C93E00D9E9F5 /* Preview Content */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		16DCE4E92881C9EF00D9E9F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		16DCE4EA2881C9F500D9E9F5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		16DCE4EB2881CA1400D9E9F5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		16DCE4EC2881CA2700D9E9F5 /* Rockets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rockets;
+			sourceTree = "<group>";
+		};
+		16DCE4ED2881CA3A00D9E9F5 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		16DCE4EE2881CA4200D9E9F5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				16DCE4BD2881C93D00D9E9F5 /* SpaceXApp.swift */,
+				16DCE4BF2881C93D00D9E9F5 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		16DCE4F32881CB1200D9E9F5 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,7 +488,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SpaceX/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SpaceX/SupportingFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = B62NGVJ6R8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -445,7 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SpaceX/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SpaceX/SupportingFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = B62NGVJ6R8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
