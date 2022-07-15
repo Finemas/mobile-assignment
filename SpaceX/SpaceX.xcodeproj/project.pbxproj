@@ -14,6 +14,11 @@
 		16DCE4CF2881C93E00D9E9F5 /* SpaceXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE4CE2881C93E00D9E9F5 /* SpaceXTests.swift */; };
 		16DCE4D92881C93E00D9E9F5 /* SpaceXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE4D82881C93E00D9E9F5 /* SpaceXUITests.swift */; };
 		16DCE4DB2881C93E00D9E9F5 /* SpaceXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE4DA2881C93E00D9E9F5 /* SpaceXUITestsLaunchTests.swift */; };
+		16DCE4FA2881CC5C00D9E9F5 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE4F92881CC5C00D9E9F5 /* Rocket.swift */; };
+		16DCE4FE2881CCA100D9E9F5 /* RocketsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE4FD2881CCA100D9E9F5 /* RocketsListView.swift */; };
+		16DCE5012881CCC500D9E9F5 /* RocketsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE5002881CCC500D9E9F5 /* RocketsListViewModel.swift */; };
+		16DCE5032881CE3500D9E9F5 /* Rocket+instances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE5022881CE3500D9E9F5 /* Rocket+instances.swift */; };
+		16DCE5062881D0BE00D9E9F5 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE5052881D0BE00D9E9F5 /* Date+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		16DCE4D42881C93E00D9E9F5 /* SpaceXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DCE4D82881C93E00D9E9F5 /* SpaceXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXUITests.swift; sourceTree = "<group>"; };
 		16DCE4DA2881C93E00D9E9F5 /* SpaceXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		16DCE4F92881CC5C00D9E9F5 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		16DCE4FD2881CCA100D9E9F5 /* RocketsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsListView.swift; sourceTree = "<group>"; };
+		16DCE5002881CCC500D9E9F5 /* RocketsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsListViewModel.swift; sourceTree = "<group>"; };
+		16DCE5022881CE3500D9E9F5 /* Rocket+instances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rocket+instances.swift"; sourceTree = "<group>"; };
+		16DCE5052881D0BE00D9E9F5 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,7 @@
 			children = (
 				16DCE4EE2881CA4200D9E9F5 /* App */,
 				16DCE4EA2881C9F500D9E9F5 /* Components */,
+				16DCE5042881D0A700D9E9F5 /* Extensions */,
 				16DCE4EB2881CA1400D9E9F5 /* Managers */,
 				16DCE4F32881CB1200D9E9F5 /* Mock */,
 				16DCE4E92881C9EF00D9E9F5 /* Models */,
@@ -151,6 +162,8 @@
 		16DCE4E92881C9EF00D9E9F5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				16DCE4F82881CC5200D9E9F5 /* API */,
+				16DCE4F72881CC4C00D9E9F5 /* Domain */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,6 +185,7 @@
 		16DCE4EC2881CA2700D9E9F5 /* Rockets */ = {
 			isa = PBXGroup;
 			children = (
+				16DCE4FF2881CCB600D9E9F5 /* RocketsListView */,
 			);
 			path = Rockets;
 			sourceTree = "<group>";
@@ -195,8 +209,41 @@
 		16DCE4F32881CB1200D9E9F5 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				16DCE5022881CE3500D9E9F5 /* Rocket+instances.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		16DCE4F72881CC4C00D9E9F5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				16DCE4F92881CC5C00D9E9F5 /* Rocket.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		16DCE4F82881CC5200D9E9F5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		16DCE4FF2881CCB600D9E9F5 /* RocketsListView */ = {
+			isa = PBXGroup;
+			children = (
+				16DCE4FD2881CCA100D9E9F5 /* RocketsListView.swift */,
+				16DCE5002881CCC500D9E9F5 /* RocketsListViewModel.swift */,
+			);
+			path = RocketsListView;
+			sourceTree = "<group>";
+		};
+		16DCE5042881D0A700D9E9F5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				16DCE5052881D0BE00D9E9F5 /* Date+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,7 +376,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16DCE5062881D0BE00D9E9F5 /* Date+.swift in Sources */,
+				16DCE4FA2881CC5C00D9E9F5 /* Rocket.swift in Sources */,
+				16DCE5012881CCC500D9E9F5 /* RocketsListViewModel.swift in Sources */,
 				16DCE4C02881C93D00D9E9F5 /* ContentView.swift in Sources */,
+				16DCE4FE2881CCA100D9E9F5 /* RocketsListView.swift in Sources */,
+				16DCE5032881CE3500D9E9F5 /* Rocket+instances.swift in Sources */,
 				16DCE4BE2881C93D00D9E9F5 /* SpaceXApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
