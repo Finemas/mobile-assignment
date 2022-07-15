@@ -11,18 +11,10 @@ struct RocketsListView: View {
     @ObservedObject var viewModel: RocketsListViewModel
     
     var body: some View {
-        VStack {
-            Text(Rocket.falcon1.name)
-            Text(Rocket.falcon1.firstFlight.stringFormat(format: "dd.MM.yyyy"))
-
-            Text(Rocket.falcon9.name)
-            Text(Rocket.falcon9.firstFlight.stringFormat(format: "dd.MM.yyyy"))
-
-            Text(Rocket.falconHeavy.name)
-            Text(Rocket.falconHeavy.firstFlight.stringFormat(format: "dd.MM.yyyy"))
-
-            Text(Rocket.starship.name)
-            Text(Rocket.starship.firstFlight.stringFormat(format: "dd.MM.yyyy"))
+        List {
+            ForEach(viewModel.rockets) { rocket in
+                RocketCell(rocket: rocket)
+            }
         }
     }
 }
