@@ -8,9 +8,14 @@
 import Combine
 
 class RocketsListViewModel: ObservableObject {
-    @Published var rockets: [Rocket]
+    @Published var rockets: Loadable<[Rocket], Error>
     @Published var searchText = ""
+
     var filteredRockets: [Rocket] {
+        guard case let .loaded(rockets) = rockets else {
+            return []
+        }
+
         if searchText.isEmpty {
             return rockets
         } else {
@@ -18,7 +23,7 @@ class RocketsListViewModel: ObservableObject {
         }
     }
 
-    init(rockets: [Rocket] = []) {
+    init(rockets: Loadable<[Rocket], Error> = .notRequested) {
         self.rockets = rockets
     }
 }

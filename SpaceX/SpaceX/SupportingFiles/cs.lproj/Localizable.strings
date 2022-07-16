@@ -6,6 +6,10 @@
   
 */
 
+// General
+"loading" = "Loading...";
+
 // Rockets list view
 "rockets_title" = "Rakety";
 "rockets_first_flight %@" = "První let: %@";
+"rockets_empty" = "Nebyl nalezen žádný záznam o raketách SpaceX.";

@@ -6,6 +6,10 @@
   
 */
 
+// General
+"loading" = "Loading...";
+
 // Rockets list view
 "rockets_title" = "Rockets";
 "rockets_first_flight %@" = "First flight: %@";
+"rockets_empty" = "No record of SpaceX rockets found.";

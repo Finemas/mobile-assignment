@@ -12,18 +12,61 @@ struct RocketsListView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(viewModel.filteredRockets) { rocket in
-                    NavigationLink {
-                        Text("Detail")
-                    } label: {
-                        RocketCell(rocket: rocket)
-                    }
+            content
+                .navigationTitle(.RocketsListView.title)
+        }
+    }
+}
+
+private extension RocketsListView {
+
+    @ViewBuilder
+    var content: some View {
+        switch viewModel.rockets {
+        case .notRequested, .isLoading:
+            loadingView
+
+        case .loaded:
+            if viewModel.filteredRockets.isEmpty {
+                emptyView
+            } else {
+                rocketsList
+            }
+
+        case let .failed(error):
+            Text(error.localizedDescription)
+        }
+    }
+
+    var rocketsList: some View {
+        List {
+            ForEach(viewModel.filteredRockets) { rocket in
+                NavigationLink {
+                    Text("Detail")
+                } label: {
+                    RocketCell(rocket: rocket)
                 }
             }
-            .searchable(text: $viewModel.searchText)
-            .navigationTitle(.RocketsListView.title)
         }
+        .searchable(text: $viewModel.searchText)
+
+    }
+
+    var emptyView: some View {
+        VStack {
+            Spacer()
+
+            Text(.RocketsListView.noRockets)
+                .multilineTextAlignment(.center)
+
+            Spacer()
+            Spacer()
+        }.padding(.horizontal)
+    }
+
+    var loadingView: some View {
+        ProgressView(.laoding)
+            .progressViewStyle(CircularProgressViewStyle(tint: .pink))
     }
 }
 
@@ -31,7 +74,7 @@ struct RocketsListView: View {
 struct RocketsListView_Previews: PreviewProvider {
     static var previews: some View {
         let vm = RocketsListViewModel(
-            rockets: Rocket.all
+            rockets: .loaded(Rocket.all)
         )
         RocketsListView(viewModel: vm)
     }

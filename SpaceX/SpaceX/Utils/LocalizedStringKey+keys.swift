@@ -9,8 +9,12 @@ import SwiftUI
 
 extension LocalizedStringKey {
 
+    static let laoding: LocalizedStringKey = "loading"
+
     enum RocketsListView {
         static let title: LocalizedStringKey = "rockets_title"
+        static let noRockets: LocalizedStringKey = "rockets_empty"
+
         static func firstFlight(date: String) -> LocalizedStringKey {
             "rockets_first_flight \(date)"
         }

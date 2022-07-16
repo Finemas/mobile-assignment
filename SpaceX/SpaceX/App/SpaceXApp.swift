@@ -17,7 +17,7 @@ struct SpaceXApp: App {
                 RocketsListView(
                     viewModel:
                         RocketsListViewModel(
-                            rockets: Rocket.all
+                            rockets: .loaded(Rocket.all)
                         )
                 )
             } else {
