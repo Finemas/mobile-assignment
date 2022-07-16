@@ -22,5 +22,5 @@ struct RocketDetail {
     // The second stage
     let secondStage: Stage
     // Images of rocket
-    let images: [URL]
+    let photos: [Photo]
 }

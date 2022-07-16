@@ -45,6 +45,8 @@ private extension RocketDetailView {
 
                 StageView(title: .RocketDetail.secondStage, stage: rocket.secondStage)
 
+                photos(rocket)
+
                 Spacer()
             }.padding(.horizontal)
         }
@@ -78,6 +80,36 @@ private extension RocketDetailView {
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .frame(height: 100)
+        }
+    }
+
+    func photos(_ rocket: RocketDetail) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(.RocketDetail.photos)
+                .font(.headline)
+                .fontWeight(.bold)
+
+            VStack(spacing: 8) {
+                ForEach(rocket.photos) { photo in
+                    AsyncImage(url: photo.url) { asyncImagePhase in
+                        switch asyncImagePhase {
+                        case .empty:
+                            ProgressView()
+
+                        case .failure:
+                            Text("Unexpected error has occured.")
+
+                        case let .success(image):
+                            image
+                                .resizable()
+                                .scaledToFit()
+                                .clipped()
+                                .clipShape(RoundedRectangle(cornerRadius: 15))
+                                .contentShape(RoundedRectangle(cornerRadius: 15))
+                        }
+                    }
+                }
+            }
         }
     }
 }

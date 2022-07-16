@@ -35,6 +35,8 @@
 		16F34033288325F3001E5168 /* BoxText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F34032288325F3001E5168 /* BoxText.swift */; };
 		16F3403928833A76001E5168 /* StageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3403828833A76001E5168 /* StageView.swift */; };
 		16F3403C28833CF8001E5168 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 16F3403E28833CF8001E5168 /* Localizable.stringsdict */; };
+		16F34041288345FB001E5168 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F34040288345FB001E5168 /* Photo.swift */; };
+		16F34043288347F1001E5168 /* SectionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F34042288347F1001E5168 /* SectionContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		16F3403828833A76001E5168 /* StageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageView.swift; sourceTree = "<group>"; };
 		16F3403D28833CF8001E5168 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		16F3403F28833CFB001E5168 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = cs; path = cs.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		16F34040288345FB001E5168 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		16F34042288347F1001E5168 /* SectionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +216,7 @@
 				16F3402E2883208C001E5168 /* LoadingView.swift */,
 				16F34032288325F3001E5168 /* BoxText.swift */,
 				16F3403828833A76001E5168 /* StageView.swift */,
+				16F34042288347F1001E5168 /* SectionContainer.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 				16F3402628831B8D001E5168 /* Parameter.swift */,
 				16F3402828831BA3001E5168 /* Stage.swift */,
 				16F3402A28831BB4001E5168 /* RocketDetail.swift */,
+				16F34040288345FB001E5168 /* Photo.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -463,7 +469,9 @@
 				16F34021288315A5001E5168 /* RocketDetailView.swift in Sources */,
 				16F34023288315B0001E5168 /* RocketDetailViewModel.swift in Sources */,
 				16DCE4BE2881C93D00D9E9F5 /* SpaceXApp.swift in Sources */,
+				16F34041288345FB001E5168 /* Photo.swift in Sources */,
 				16F3401E288310CD001E5168 /* Loadable.swift in Sources */,
+				16F34043288347F1001E5168 /* SectionContainer.swift in Sources */,
 				16F3402D28831C3D001E5168 /* RocketDetail+instances.swift in Sources */,
 				16F3402F2883208C001E5168 /* LoadingView.swift in Sources */,
 			);

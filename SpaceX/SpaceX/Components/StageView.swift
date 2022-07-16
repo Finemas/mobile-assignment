@@ -29,7 +29,7 @@ struct StageView: View {
             rowFactory(image: Icons.reusable.rawValue, text: .RocketDetail.burnTime(seconds: stage.burnTime))
         }
         .padding()
-        .background(.gray.opacity(0.2))
+        .background(.gray.opacity(0.1))
         .cornerRadius(15)
     }
 }
