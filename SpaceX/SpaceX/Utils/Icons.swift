@@ -10,7 +10,7 @@ import SwiftUI
 enum Icons: String {
     case burn = "Burn"
     case engine = "Engine"
-    case fuel = "fuel"
+    case fuel = "Fuel"
     case reusable = "Reusable"
     case flyingRocket = "Rocket Flying"
     case rocketIdle = "Rocket Idle"

@@ -76,6 +76,14 @@ private extension RocketDetailView {
             .frame(height: 100)
         }
     }
+
+    func rocketStageView(_ rocket: Rocket) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(.RocketDetail.firstStage)
+                .font(.headline)
+                .fontWeight(.bold)
+        }
+    }
 }
 
 struct RocketDetail_Previews: PreviewProvider {

@@ -30,3 +30,27 @@ struct BoxText: View {
         .cornerRadius(15)
     }
 }
+
+struct BoxText_Previews: PreviewProvider {
+    static var previews: some View {
+        HStack() {
+            BoxText(
+                title: "90m",
+                subtitle: "height"
+            )
+
+            BoxText(
+                title: "40m",
+                subtitle: "diameter"
+            )
+
+            BoxText(
+                title: "500t",
+                subtitle: "mass"
+            )
+        }
+        .frame(minWidth: 0, maxWidth: .infinity)
+        .frame(height: 100)
+        .padding()
+    }
+}
