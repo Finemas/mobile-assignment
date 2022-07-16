@@ -25,6 +25,11 @@
 		16F3401E288310CD001E5168 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3401D288310CD001E5168 /* Loadable.swift */; };
 		16F34021288315A5001E5168 /* RocketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F34020288315A5001E5168 /* RocketDetailView.swift */; };
 		16F34023288315B0001E5168 /* RocketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F34022288315B0001E5168 /* RocketDetailViewModel.swift */; };
+		16F3402528831B79001E5168 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3402428831B79001E5168 /* Measurement.swift */; };
+		16F3402728831B8D001E5168 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3402628831B8D001E5168 /* Parameter.swift */; };
+		16F3402928831BA3001E5168 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3402828831BA3001E5168 /* Stage.swift */; };
+		16F3402B28831BB4001E5168 /* RocketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3402A28831BB4001E5168 /* RocketDetail.swift */; };
+		16F3402D28831C3D001E5168 /* RocketDetail+instances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3402C28831C3D001E5168 /* RocketDetail+instances.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		16F3401D288310CD001E5168 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		16F34020288315A5001E5168 /* RocketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailView.swift; sourceTree = "<group>"; };
 		16F34022288315B0001E5168 /* RocketDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailViewModel.swift; sourceTree = "<group>"; };
+		16F3402428831B79001E5168 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
+		16F3402628831B8D001E5168 /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		16F3402828831BA3001E5168 /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		16F3402A28831BB4001E5168 /* RocketDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetail.swift; sourceTree = "<group>"; };
+		16F3402C28831C3D001E5168 /* RocketDetail+instances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RocketDetail+instances.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				16DCE5022881CE3500D9E9F5 /* Rocket+instances.swift */,
+				16F3402C28831C3D001E5168 /* RocketDetail+instances.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -233,6 +244,10 @@
 			isa = PBXGroup;
 			children = (
 				16DCE4F92881CC5C00D9E9F5 /* Rocket.swift */,
+				16F3402428831B79001E5168 /* Measurement.swift */,
+				16F3402628831B8D001E5168 /* Parameter.swift */,
+				16F3402828831BA3001E5168 /* Stage.swift */,
+				16F3402A28831BB4001E5168 /* RocketDetail.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -418,13 +433,18 @@
 				16DCE5092881E76900D9E9F5 /* Icons.swift in Sources */,
 				16DCE5012881CCC500D9E9F5 /* RocketsListViewModel.swift in Sources */,
 				16DCE50B2881E8D800D9E9F5 /* RocketCell.swift in Sources */,
+				16F3402728831B8D001E5168 /* Parameter.swift in Sources */,
 				16DCE4FE2881CCA100D9E9F5 /* RocketsListView.swift in Sources */,
 				16DCE5142881EAFE00D9E9F5 /* LocalizedStringKey+keys.swift in Sources */,
+				16F3402B28831BB4001E5168 /* RocketDetail.swift in Sources */,
 				16DCE5032881CE3500D9E9F5 /* Rocket+instances.swift in Sources */,
+				16F3402928831BA3001E5168 /* Stage.swift in Sources */,
+				16F3402528831B79001E5168 /* Measurement.swift in Sources */,
 				16F34021288315A5001E5168 /* RocketDetailView.swift in Sources */,
 				16F34023288315B0001E5168 /* RocketDetailViewModel.swift in Sources */,
 				16DCE4BE2881C93D00D9E9F5 /* SpaceXApp.swift in Sources */,
 				16F3401E288310CD001E5168 /* Loadable.swift in Sources */,
+				16F3402D28831C3D001E5168 /* RocketDetail+instances.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
