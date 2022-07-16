@@ -21,9 +21,10 @@
 "rocket_Second_stage" = "Druhý stupeň";
 "rocket_photos" = "Fotky";
 
-"rocket_lenght" = "Délka";
-"rocket_diameter" = "Průměr";
-"rocket_mass" = "Hmotnost";
-
 "rocket_reusable" = "znovu použitelná";
 "rocket_not_reusable" = "nelze znovu použít";
+
+// Special localizatin from API. The name of properry should match the localization key.
+"height" = "výška";
+"diameter" = "průměr";
+"mass" = "hmotnost";

@@ -16,19 +16,19 @@ extension RocketDetail {
         parameters: [
             Parameter(
                 type: .length,
-                name: "Heighr",
+                name: "height",
                 metric: 70,
                 imperial: 229.6
             ),
             Parameter(
                 type: .length,
-                name: "Diameter",
+                name: "diameter",
                 metric: 3.7,
                 imperial: 12
             ),
             Parameter(
                 type: .mass,
-                name: "Mass",
+                name: "mass",
                 metric: 549054,
                 imperial: 1207920
             )

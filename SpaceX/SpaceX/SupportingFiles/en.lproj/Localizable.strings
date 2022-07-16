@@ -21,9 +21,10 @@
 "rocket_Second_stage" = "Second Stage";
 "rocket_photos" = "Photos";
 
-"rocket_lenght" = "Lenght";
-"rocket_diameter" = "Diameter";
-"rocket_mass" = "Mass";
-
 "rocket_reusable" = "reusable";
 "rocket_not_reusable" = "not reusable";
+
+// Special localizatin from API. The name of properry should match the localization key.
+"height" = "height";
+"diameter" = "diameter";
+"mass" = "mass";

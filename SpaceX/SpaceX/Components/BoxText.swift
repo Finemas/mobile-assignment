@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BoxText: View {
     let title: String
-    let subtitle: String
+    let subtitle: LocalizedStringKey
 
     var body: some View {
         VStack(spacing: 8) {
@@ -33,7 +33,7 @@ struct BoxText: View {
 
 struct BoxText_Previews: PreviewProvider {
     static var previews: some View {
-        HStack() {
+        HStack {
             BoxText(
                 title: "90m",
                 subtitle: "height"

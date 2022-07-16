@@ -34,13 +34,20 @@ private extension RocketDetailView {
     }
 
     func rocketView(_ rocket: RocketDetail) -> some View {
-        VStack(alignment: .leading, spacing: 32) {
-            description(rocket)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 32) {
+                description(rocket)
 
-            parameters(rocket)
+                parameters(rocket)
 
-            Spacer()
-        }.padding(.horizontal)
+
+                StageView(title: .RocketDetail.firstStage, stage: rocket.firstStage)
+
+                StageView(title: .RocketDetail.secondStage, stage: rocket.secondStage)
+
+                Spacer()
+            }.padding(.horizontal)
+        }
     }
 
     func description(_ rocket: RocketDetail) -> some View {
@@ -60,28 +67,17 @@ private extension RocketDetailView {
                 .font(.headline)
                 .fontWeight(.bold)
 
-            HStack() {
+            HStack {
                 ForEach(rocket.parameters) { parameter in
-                    if Locale.current.usesMetricSystem {
-                        let number = "\(parameter.metric)\(parameter.type.unit(.metric))"
-                        BoxText(title: number, subtitle: parameter.name)
+                    let number = Locale.current.usesMetricSystem
+                        ? "\(parameter.metric)\(parameter.type.unit(.metric))"
+                        : "\(parameter.imperial)\(parameter.type.unit(.imperial))"
 
-                    } else {
-                        let number = "\(parameter.imperial)\(parameter.type.unit(.imperial))"
-                        BoxText(title: number, subtitle: parameter.name)
-                    }
+                    BoxText(title: number, subtitle: LocalizedStringKey(parameter.name))
                 }
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .frame(height: 100)
-        }
-    }
-
-    func rocketStageView(_ rocket: Rocket) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(.RocketDetail.firstStage)
-                .font(.headline)
-                .fontWeight(.bold)
         }
     }
 }
