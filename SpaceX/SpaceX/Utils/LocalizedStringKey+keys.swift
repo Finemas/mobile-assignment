@@ -34,9 +34,14 @@ extension LocalizedStringKey {
         static let reusable: LocalizedStringKey = "rocket_reusable"
         static let notReusable: LocalizedStringKey = "rocket_not_reusable"
 
-        static let engine: LocalizedStringKey = "rocket_engine"
-        static let engines: LocalizedStringKey = "rocket_engines"
-        static let fuelTons: LocalizedStringKey = "rocket_fuel_tons"
-        static let burnTime: LocalizedStringKey = "rocket_burn_time"
+        static func engines(number: Int) -> LocalizedStringKey {
+            "rocket_engines \(number)"
+        }
+        static func fuelTons(tons: Int) -> LocalizedStringKey {
+            "rocket_fuel_tons \(tons)"
+        }
+        static func burnTime(seconds: Int) -> LocalizedStringKey {
+            "rocket_burn_time \(seconds)"
+        }
     }
 }

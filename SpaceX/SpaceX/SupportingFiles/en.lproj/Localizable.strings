@@ -27,8 +27,3 @@
 
 "rocket_reusable" = "reusable";
 "rocket_not_reusable" = "not reusable";
-
-"rocket_engine" = "engine";
-"rocket_engines" = "engines";
-"rocket_fuel_tons" = "tons of fuel";
-"rocket_burn_time" = "seconds burn time";

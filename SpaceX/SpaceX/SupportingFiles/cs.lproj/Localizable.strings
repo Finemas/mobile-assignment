@@ -27,8 +27,3 @@
 
 "rocket_reusable" = "znovu použitelná";
 "rocket_not_reusable" = "nelze znovu použít";
-
-"rocket_engine" = "motor";
-"rocket_engines" = "motorů";
-"rocket_fuel_tons" = "tun paliva";
-"rocket_burn_time" = "sekund doba hoření";

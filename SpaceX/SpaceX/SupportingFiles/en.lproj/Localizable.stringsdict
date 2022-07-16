@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>rocket_engines %lld</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>%#@engines@</string>
+        <key>engines</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>lld</string>
+            <key>zero</key>
+            <string>No engines</string>
+            <key>one</key>
+            <string>1 engine</string>
+            <key>other</key>
+            <string>%d engines</string>
+        </dict>
+    </dict>
+
+    <key>rocket_fuel_tons %lld</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>%#@tons@</string>
+        <key>tons</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>lld</string>
+            <key>zero</key>
+            <string>No tons of fuel</string>
+            <key>one</key>
+            <string>1 ton of fuel</string>
+            <key>other</key>
+            <string>%d tons of fuel</string>
+        </dict>
+    </dict>
+
+    <key>rocket_burn_time %lld</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>%#@seconds@</string>
+        <key>seconds</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>lld</string>
+            <key>zero</key>
+            <string>Zero seconds burn time</string>
+            <key>one</key>
+            <string>1 second burn time</string>
+            <key>other</key>
+            <string>%d seconds burn time</string>
+        </dict>
+    </dict>
+</dict>
+</plist>
