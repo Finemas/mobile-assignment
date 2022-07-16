@@ -37,6 +37,7 @@
 		16F3403C28833CF8001E5168 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 16F3403E28833CF8001E5168 /* Localizable.stringsdict */; };
 		16F34041288345FB001E5168 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F34040288345FB001E5168 /* Photo.swift */; };
 		16F34043288347F1001E5168 /* SectionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F34042288347F1001E5168 /* SectionContainer.swift */; };
+		16F3404728834AE8001E5168 /* AsyncImageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3404628834AE8001E5168 /* AsyncImageWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		16F3403F28833CFB001E5168 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = cs; path = cs.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		16F34040288345FB001E5168 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		16F34042288347F1001E5168 /* SectionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionContainer.swift; sourceTree = "<group>"; };
+		16F3404628834AE8001E5168 /* AsyncImageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 				16F34032288325F3001E5168 /* BoxText.swift */,
 				16F3403828833A76001E5168 /* StageView.swift */,
 				16F34042288347F1001E5168 /* SectionContainer.swift */,
+				16F3404628834AE8001E5168 /* AsyncImageWrapper.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F3404728834AE8001E5168 /* AsyncImageWrapper.swift in Sources */,
 				16DCE5062881D0BE00D9E9F5 /* Date+.swift in Sources */,
 				16F34031288323CE001E5168 /* Constants.swift in Sources */,
 				16DCE4FA2881CC5C00D9E9F5 /* Rocket.swift in Sources */,

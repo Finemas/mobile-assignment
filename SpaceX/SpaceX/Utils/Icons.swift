@@ -16,6 +16,8 @@ enum Icons: String {
     case rocketIdle = "Rocket Idle"
     case rocket = "Rocket"
 
+    case exclamationCloud = "exclamationmark.icloud"
+
     var image: Image {
         Image(self.rawValue)
     }
