@@ -30,6 +30,9 @@
 		16F3402928831BA3001E5168 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3402828831BA3001E5168 /* Stage.swift */; };
 		16F3402B28831BB4001E5168 /* RocketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3402A28831BB4001E5168 /* RocketDetail.swift */; };
 		16F3402D28831C3D001E5168 /* RocketDetail+instances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3402C28831C3D001E5168 /* RocketDetail+instances.swift */; };
+		16F3402F2883208C001E5168 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3402E2883208C001E5168 /* LoadingView.swift */; };
+		16F34031288323CE001E5168 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F34030288323CE001E5168 /* Constants.swift */; };
+		16F34033288325F3001E5168 /* BoxText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F34032288325F3001E5168 /* BoxText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		16F3402828831BA3001E5168 /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
 		16F3402A28831BB4001E5168 /* RocketDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetail.swift; sourceTree = "<group>"; };
 		16F3402C28831C3D001E5168 /* RocketDetail+instances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RocketDetail+instances.swift"; sourceTree = "<group>"; };
+		16F3402E2883208C001E5168 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		16F34030288323CE001E5168 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		16F34032288325F3001E5168 /* BoxText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,7 @@
 				16DCE4C12881C93E00D9E9F5 /* Assets.xcassets */,
 				16DCE5122881EA9400D9E9F5 /* Localizable.strings */,
 				16DCE4C32881C93E00D9E9F5 /* Preview Content */,
+				16F34030288323CE001E5168 /* Constants.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -196,6 +203,8 @@
 		16DCE4EA2881C9F500D9E9F5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				16F3402E2883208C001E5168 /* LoadingView.swift */,
+				16F34032288325F3001E5168 /* BoxText.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -210,8 +219,8 @@
 		16DCE4EC2881CA2700D9E9F5 /* Rockets */ = {
 			isa = PBXGroup;
 			children = (
-				16F3401F28831595001E5168 /* RocketDetailView */,
 				16DCE4FF2881CCB600D9E9F5 /* RocketsListView */,
+				16F3401F28831595001E5168 /* RocketDetailView */,
 			);
 			path = Rockets;
 			sourceTree = "<group>";
@@ -429,10 +438,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				16DCE5062881D0BE00D9E9F5 /* Date+.swift in Sources */,
+				16F34031288323CE001E5168 /* Constants.swift in Sources */,
 				16DCE4FA2881CC5C00D9E9F5 /* Rocket.swift in Sources */,
 				16DCE5092881E76900D9E9F5 /* Icons.swift in Sources */,
 				16DCE5012881CCC500D9E9F5 /* RocketsListViewModel.swift in Sources */,
 				16DCE50B2881E8D800D9E9F5 /* RocketCell.swift in Sources */,
+				16F34033288325F3001E5168 /* BoxText.swift in Sources */,
 				16F3402728831B8D001E5168 /* Parameter.swift in Sources */,
 				16DCE4FE2881CCA100D9E9F5 /* RocketsListView.swift in Sources */,
 				16DCE5142881EAFE00D9E9F5 /* LocalizedStringKey+keys.swift in Sources */,
@@ -445,6 +456,7 @@
 				16DCE4BE2881C93D00D9E9F5 /* SpaceXApp.swift in Sources */,
 				16F3401E288310CD001E5168 /* Loadable.swift in Sources */,
 				16F3402D28831C3D001E5168 /* RocketDetail+instances.swift in Sources */,
+				16F3402F2883208C001E5168 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
