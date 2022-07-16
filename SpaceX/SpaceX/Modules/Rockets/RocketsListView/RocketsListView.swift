@@ -42,14 +42,14 @@ private extension RocketsListView {
         List {
             ForEach(viewModel.filteredRockets) { rocket in
                 NavigationLink {
-                    Text("Detail")
+                    let vm = RocketDetailViewModel(rocket: rocket)
+                    RocketDetailView(viewModel: vm)
                 } label: {
                     RocketCell(rocket: rocket)
                 }
             }
         }
         .searchable(text: $viewModel.searchText)
-
     }
 
     var emptyView: some View {
@@ -69,7 +69,6 @@ private extension RocketsListView {
             .progressViewStyle(CircularProgressViewStyle(tint: .pink))
     }
 }
-
 
 struct RocketsListView_Previews: PreviewProvider {
     static var previews: some View {

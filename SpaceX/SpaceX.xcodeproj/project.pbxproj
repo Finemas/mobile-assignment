@@ -23,6 +23,8 @@
 		16DCE5102881EA9400D9E9F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16DCE5122881EA9400D9E9F5 /* Localizable.strings */; };
 		16DCE5142881EAFE00D9E9F5 /* LocalizedStringKey+keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE5132881EAFE00D9E9F5 /* LocalizedStringKey+keys.swift */; };
 		16F3401E288310CD001E5168 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3401D288310CD001E5168 /* Loadable.swift */; };
+		16F34021288315A5001E5168 /* RocketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F34020288315A5001E5168 /* RocketDetailView.swift */; };
+		16F34023288315B0001E5168 /* RocketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F34022288315B0001E5168 /* RocketDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		16DCE5132881EAFE00D9E9F5 /* LocalizedStringKey+keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedStringKey+keys.swift"; sourceTree = "<group>"; };
 		16DCE5152881EBFC00D9E9F5 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
 		16F3401D288310CD001E5168 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		16F34020288315A5001E5168 /* RocketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailView.swift; sourceTree = "<group>"; };
+		16F34022288315B0001E5168 /* RocketDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 		16DCE4EC2881CA2700D9E9F5 /* Rockets */ = {
 			isa = PBXGroup;
 			children = (
+				16F3401F28831595001E5168 /* RocketDetailView */,
 				16DCE4FF2881CCB600D9E9F5 /* RocketsListView */,
 			);
 			path = Rockets;
@@ -265,6 +270,15 @@
 				16F3401D288310CD001E5168 /* Loadable.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		16F3401F28831595001E5168 /* RocketDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				16F34020288315A5001E5168 /* RocketDetailView.swift */,
+				16F34022288315B0001E5168 /* RocketDetailViewModel.swift */,
+			);
+			path = RocketDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +421,8 @@
 				16DCE4FE2881CCA100D9E9F5 /* RocketsListView.swift in Sources */,
 				16DCE5142881EAFE00D9E9F5 /* LocalizedStringKey+keys.swift in Sources */,
 				16DCE5032881CE3500D9E9F5 /* Rocket+instances.swift in Sources */,
+				16F34021288315A5001E5168 /* RocketDetailView.swift in Sources */,
+				16F34023288315B0001E5168 /* RocketDetailViewModel.swift in Sources */,
 				16DCE4BE2881C93D00D9E9F5 /* SpaceXApp.swift in Sources */,
 				16F3401E288310CD001E5168 /* Loadable.swift in Sources */,
 			);
