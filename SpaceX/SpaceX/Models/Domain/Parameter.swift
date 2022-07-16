@@ -15,3 +15,7 @@ struct Parameter {
     // Number in imperial system
     let imperial: Double
 }
+
+extension Parameter: Identifiable {
+    var id: String { name }
+}

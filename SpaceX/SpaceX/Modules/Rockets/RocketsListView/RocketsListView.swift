@@ -24,7 +24,7 @@ private extension RocketsListView {
     var content: some View {
         switch viewModel.rockets {
         case .notRequested, .isLoading:
-            loadingView
+            LoadingView()
 
         case .loaded:
             if viewModel.filteredRockets.isEmpty {
@@ -41,15 +41,27 @@ private extension RocketsListView {
     var rocketsList: some View {
         List {
             ForEach(viewModel.filteredRockets) { rocket in
-                NavigationLink {
-                    let vm = RocketDetailViewModel(rocket: rocket)
-                    RocketDetailView(viewModel: vm)
-                } label: {
-                    RocketCell(rocket: rocket)
-                }
+                rocketCell(rocket)
             }
         }
         .searchable(text: $viewModel.searchText)
+    }
+
+    func rocketCell(_ rocket: Rocket) -> some View {
+        NavigationLink {
+            if Constants.isDebug {
+                let vm = RocketDetailViewModel(
+                    rocket: .falcon9,
+                    rocketDetail: .loaded(.falcon9)
+                )
+                RocketDetailView(viewModel: vm)
+            } else {
+                let vm = RocketDetailViewModel(rocket: rocket)
+                RocketDetailView(viewModel: vm)
+            }
+        } label: {
+            RocketCell(rocket: rocket)
+        }
     }
 
     var emptyView: some View {
@@ -62,11 +74,6 @@ private extension RocketsListView {
             Spacer()
             Spacer()
         }.padding(.horizontal)
-    }
-
-    var loadingView: some View {
-        ProgressView(.laoding)
-            .progressViewStyle(CircularProgressViewStyle(tint: .pink))
     }
 }
 
