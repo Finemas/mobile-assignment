@@ -13,3 +13,22 @@
 "rockets_title" = "Rockets";
 "rockets_first_flight %@" = "First flight: %@";
 "rockets_empty" = "No record of SpaceX rockets found.";
+
+// Rocket detail
+"rocket_description" = "Description";
+"rocket_parameters" = "Parameters";
+"rocket_first_stage" = "First Stage";
+"rocket_Second_stage" = "Second Stage";
+"rocket_photos" = "Photos";
+
+"rocket_lenght" = "Lenght";
+"rocket_diameter" = "Diameter";
+"rocket_mass" = "Mass";
+
+"rocket_reusable" = "reusable";
+"rocket_not_reusable" = "not reusable";
+
+"rocket_engine" = "engine";
+"rocket_engines" = "engines";
+"rocket_fuel_tons" = "tons of fuel";
+"rocket_burn_time" = "seconds burn time";

@@ -13,3 +13,22 @@
 "rockets_title" = "Rakety";
 "rockets_first_flight %@" = "První let: %@";
 "rockets_empty" = "Nebyl nalezen žádný záznam o raketách SpaceX.";
+
+// Rocket detail
+"rocket_description" = "Popis";
+"rocket_parameters" = "Parametry";
+"rocket_first_stage" = "První stupeň";
+"rocket_Second_stage" = "Druhý stupeň";
+"rocket_photos" = "Fotky";
+
+"rocket_lenght" = "Délka";
+"rocket_diameter" = "Průměr";
+"rocket_mass" = "Hmotnost";
+
+"rocket_reusable" = "znovu použitelná";
+"rocket_not_reusable" = "nelze znovu použít";
+
+"rocket_engine" = "motor";
+"rocket_engines" = "motorů";
+"rocket_fuel_tons" = "tun paliva";
+"rocket_burn_time" = "sekund doba hoření";
