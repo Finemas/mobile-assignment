@@ -11,16 +11,17 @@ import SwiftUI
 struct SpaceXApp: App {
     var body: some Scene {
         WindowGroup {
-            if Constants.isDebug {
-                RocketsListView(
-                    viewModel:
-                        RocketsListViewModel(
-                            rockets: .loaded(Rocket.all)
-                        )
-                )
-            } else {
-                RocketsListView(viewModel: RocketsListViewModel())
-            }
+            LaunchView(viewModel: LaunchViewModel())
+//            if Constants.isDebug {
+//                RocketsListView(
+//                    viewModel:
+//                        RocketsListViewModel(
+//                            rockets: .loaded(Rocket.all)
+//                        )
+//                )
+//            } else {
+//                RocketsListView(viewModel: RocketsListViewModel())
+//            }
         }
     }
 }

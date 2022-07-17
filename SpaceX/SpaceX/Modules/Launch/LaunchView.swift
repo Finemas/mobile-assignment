@@ -8,20 +8,39 @@
 import SwiftUI
 
 struct LaunchView: View {
-    @ObservedObject var motion: MotionManager
+    @ObservedObject var viewModel: LaunchViewModel
 
     var body: some View {
         VStack {
             Text("Motion Data")
-            Text("pith: \(motion.pitch * 100)")
+            if
+                let motionData = viewModel.motionManager.motionData,
+                case let .success(motionData) = motionData
+            {
+                Text("pith: \(motionData.attitude.pitch * 100)")
+            }
 
             content
+
+            HStack {
+                Button {
+                    viewModel.startReceivingMotionData()
+                } label: {
+                    Text("Start gyro")
+                }
+
+                Button {
+                    viewModel.stopReceivingMotionData()
+                } label: {
+                    Text("Stop gyro")
+                }
+            }
         }
         .onAppear {
-            motion.startReceivingMotionUpdates()
+            viewModel.startReceivingMotionData()
         }
         .onDisappear {
-            motion.stopReceivingMotionUpdates()
+            viewModel.stopReceivingMotionData()
         }
     }
 }
@@ -30,13 +49,13 @@ private extension LaunchView {
 
     @ViewBuilder
     var content: some View {
-        switch motion.state {
+        switch viewModel.motionState {
         case .notRequested, .paused:
             Text("----")
                 .font(.title)
 
-        case let .scanning(pitch):
-            if pitch < 0 {
+        case let .scanning(shouldLaunch):
+            if shouldLaunch {
                 Text("Launch !!!!!")
                     .font(.title)
             } else {
@@ -52,6 +71,6 @@ private extension LaunchView {
 
 struct LaunchView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchView(motion: MotionManager() )
+        LaunchView(viewModel: LaunchViewModel())
     }
 }
