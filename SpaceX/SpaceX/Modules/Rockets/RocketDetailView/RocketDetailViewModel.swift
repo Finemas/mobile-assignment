@@ -8,7 +8,14 @@
 import Combine
 
 class RocketDetailViewModel: ObservableObject {
+
+    enum Route {
+        case launch
+    }
+
     @Published var rocketDetail: Loadable<RocketDetail, Error>
+    @Published var route: Route?
+
     let rocket: Rocket
 
     init(

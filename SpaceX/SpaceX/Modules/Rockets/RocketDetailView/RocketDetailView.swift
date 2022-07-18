@@ -14,6 +14,18 @@ struct RocketDetailView: View {
         content
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle(viewModel.rocket.name)
+            .background {
+                navigationLink
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        viewModel.route = .launch
+                    } label: {
+                        Text(.RocketDetail.launch)
+                    }
+                }
+            }
     }
 }
 
@@ -93,6 +105,28 @@ private extension RocketDetailView {
                             .contentShape(RoundedRectangle(cornerRadius: 15))
                     }
                 }
+            }
+        )
+    }
+
+    var navigationLink: some View {
+        NavigationLink(
+            isActive:
+                Binding(
+                    get: {
+                        viewModel.route != nil
+                    },
+                    set: { isActive in
+                        if !isActive {
+                            viewModel.route = nil
+                        }
+                    }
+                ),
+            destination: {
+                LaunchView(viewModel: LaunchViewModel())
+            },
+            label: {
+                EmptyView()
             }
         )
     }

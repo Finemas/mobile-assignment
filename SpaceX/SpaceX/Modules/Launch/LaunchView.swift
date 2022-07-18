@@ -17,24 +17,10 @@ struct LaunchView: View {
                 let motionData = viewModel.motionManager.motionData,
                 case let .success(motionData) = motionData
             {
-                Text("pith: \(motionData.attitude.pitch * 100)")
+                Text("pith: \(motionData.attitude.pitch)")
             }
 
             content
-
-            HStack {
-                Button {
-                    viewModel.startReceivingMotionData()
-                } label: {
-                    Text("Start gyro")
-                }
-
-                Button {
-                    viewModel.stopReceivingMotionData()
-                } label: {
-                    Text("Stop gyro")
-                }
-            }
         }
         .onAppear {
             viewModel.startReceivingMotionData()
@@ -50,17 +36,19 @@ private extension LaunchView {
     @ViewBuilder
     var content: some View {
         switch viewModel.motionState {
-        case .notRequested, .paused:
-            Text("----")
-                .font(.title)
+        case .notRequested:
+            Icons.rocketIdle.image
 
         case let .scanning(shouldLaunch):
             if shouldLaunch {
-                Text("Launch !!!!!")
-                    .font(.title)
+                Icons.flyingRocket.image
+                    .offset(y: -UIScreen.main.bounds.height)
+                    .transition(.scale.animation(.default.speed(0.1)))
+
+                Text("Launch successfull!")
             } else {
-                Text("Rocket")
-                    .font(.title)
+                Icons.rocketIdle.image
+                Text("Move your phone up \nto launch the rocket")
             }
 
         case let .failure(error):
