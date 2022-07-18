@@ -6,13 +6,14 @@
 //
 
 import Combine
+import Foundation
 
 class LaunchViewModel: ObservableObject {
     @Published var motionState: MotionState = .notRequested
 
     let motionManager: MotionManager
 
-    var cancellables = Set<AnyCancellable>()
+    private var cancellables = Set<AnyCancellable>()
 
     init(motionManager: MotionManager = MotionManager()) {
         self.motionManager = motionManager
@@ -26,6 +27,13 @@ class LaunchViewModel: ObservableObject {
         motionManager.startReceivingMotionUpdates()
 
         motionManager.$motionData
+            .filter { state in
+                if case let .scanning(shouldLaunch) = self.motionState {
+                    return !shouldLaunch
+                } else {
+                    return true
+                }
+            }
             .sink { [weak self] result in
                 guard
                     let self = self,
@@ -35,9 +43,13 @@ class LaunchViewModel: ObservableObject {
 
                 switch result {
                 case let .success(motionData):
-                    let tolerance: Double = 5
-                    let pitch = motionData.attitude.pitch * 100 + tolerance
-                    self.motionState = .scanning(shouldLaunch: pitch < 0)
+                    let shouldLaunch = motionData.attitude.pitch > 0.5
+                    self.motionState = .scanning(shouldLaunch: shouldLaunch)
+
+                    if shouldLaunch {
+//                        self.stopReceivingMotionData()
+                        self.resetRocketLaunched()
+                    }
 
                 case let .failure(error):
                     self.motionState = .failure(error)
@@ -47,11 +59,13 @@ class LaunchViewModel: ObservableObject {
     }
 
     func stopReceivingMotionData() {
-        if case .paused = motionState {
-            return
-        }
-
         motionManager.stopReceivingMotionUpdates()
-        motionState = .paused
+    }
+
+    func resetRocketLaunched() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.motionState = .notRequested
+            self.startReceivingMotionData()
+        }
     }
 }

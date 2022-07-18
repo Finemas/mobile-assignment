@@ -21,6 +21,7 @@ extension LocalizedStringKey {
     }
 
     enum RocketDetail {
+        static let launch: LocalizedStringKey = "rocket_launch"
         static let description: LocalizedStringKey = "rocket_description"
         static let parameters: LocalizedStringKey = "rocket_parameters"
         static let firstStage: LocalizedStringKey = "rocket_first_stage"

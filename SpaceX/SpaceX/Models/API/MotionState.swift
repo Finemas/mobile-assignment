@@ -8,6 +8,5 @@
 enum MotionState {
     case notRequested
     case scanning(shouldLaunch: Bool)
-    case paused
     case failure(Error)
 }
