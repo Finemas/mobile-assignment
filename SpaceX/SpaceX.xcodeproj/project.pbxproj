@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160AF48B28A96AAD00C31727 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AF48A28A96AAD00C31727 /* String+.swift */; };
+		160AF48D28A970A800C31727 /* AppEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AF48C28A970A800C31727 /* AppEnviroment.swift */; };
 		16AF905E28A954490050649F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF905D28A954490050649F /* APIService.swift */; };
 		16AF906028A955030050649F /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF905F28A955030050649F /* HttpMethod.swift */; };
 		16AF906228A9588E0050649F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF906128A9588E0050649F /* APIError.swift */; };
+		16AF906428A958D60050649F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF906328A958D60050649F /* APIManager.swift */; };
+		16AF906628A95B450050649F /* RocketDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF906528A95B450050649F /* RocketDTO.swift */; };
+		16AF906A28A95E9D0050649F /* RocketsEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF906928A95E9D0050649F /* RocketsEnviroment.swift */; };
+		16AF906C28A9625A0050649F /* DTOProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF906B28A9625A0050649F /* DTOProtocol.swift */; };
 		16DCE4BE2881C93D00D9E9F5 /* SpaceXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE4BD2881C93D00D9E9F5 /* SpaceXApp.swift */; };
 		16DCE4C22881C93E00D9E9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DCE4C12881C93E00D9E9F5 /* Assets.xcassets */; };
 		16DCE4C52881C93E00D9E9F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DCE4C42881C93E00D9E9F5 /* Preview Assets.xcassets */; };
@@ -65,9 +71,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		160AF48A28A96AAD00C31727 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		160AF48C28A970A800C31727 /* AppEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnviroment.swift; sourceTree = "<group>"; };
 		16AF905D28A954490050649F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		16AF905F28A955030050649F /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		16AF906128A9588E0050649F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		16AF906328A958D60050649F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		16AF906528A95B450050649F /* RocketDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDTO.swift; sourceTree = "<group>"; };
+		16AF906928A95E9D0050649F /* RocketsEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsEnviroment.swift; sourceTree = "<group>"; };
+		16AF906B28A9625A0050649F /* DTOProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOProtocol.swift; sourceTree = "<group>"; };
 		16DCE4BA2881C93D00D9E9F5 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DCE4BD2881C93D00D9E9F5 /* SpaceXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXApp.swift; sourceTree = "<group>"; };
 		16DCE4C12881C93E00D9E9F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -254,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				16F34048288412D5001E5168 /* MotionManager.swift */,
+				16AF906328A958D60050649F /* APIManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -261,6 +274,7 @@
 		16DCE4EC2881CA2700D9E9F5 /* Rockets */ = {
 			isa = PBXGroup;
 			children = (
+				16AF906928A95E9D0050649F /* RocketsEnviroment.swift */,
 				16DCE4FF2881CCB600D9E9F5 /* RocketsListView */,
 				16F3401F28831595001E5168 /* RocketDetailView */,
 			);
@@ -280,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				16DCE4BD2881C93D00D9E9F5 /* SpaceXApp.swift */,
+				160AF48C28A970A800C31727 /* AppEnviroment.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -309,8 +324,8 @@
 		16DCE4F82881CC5200D9E9F5 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				16F34050288427A2001E5168 /* MotionState.swift */,
-				16F3401D288310CD001E5168 /* Loadable.swift */,
+				16AF906528A95B450050649F /* RocketDTO.swift */,
+				16AF906B28A9625A0050649F /* DTOProtocol.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -329,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				16DCE5052881D0BE00D9E9F5 /* Date+.swift */,
+				160AF48A28A96AAD00C31727 /* String+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -354,6 +370,8 @@
 		16F34054288427C3001E5168 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				16F34050288427A2001E5168 /* MotionState.swift */,
+				16F3401D288310CD001E5168 /* Loadable.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -491,6 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16AF906428A958D60050649F /* APIManager.swift in Sources */,
 				16F3404728834AE8001E5168 /* AsyncImageWrapper.swift in Sources */,
 				16DCE5062881D0BE00D9E9F5 /* Date+.swift in Sources */,
 				16AF905E28A954490050649F /* APIService.swift in Sources */,
@@ -499,6 +518,8 @@
 				16F34049288412D5001E5168 /* MotionManager.swift in Sources */,
 				16DCE4FA2881CC5C00D9E9F5 /* Rocket.swift in Sources */,
 				16DCE5092881E76900D9E9F5 /* Icons.swift in Sources */,
+				16AF906A28A95E9D0050649F /* RocketsEnviroment.swift in Sources */,
+				160AF48B28A96AAD00C31727 /* String+.swift in Sources */,
 				16DCE5012881CCC500D9E9F5 /* RocketsListViewModel.swift in Sources */,
 				16DCE50B2881E8D800D9E9F5 /* RocketCell.swift in Sources */,
 				16AF906228A9588E0050649F /* APIError.swift in Sources */,
@@ -507,6 +528,7 @@
 				16DCE4FE2881CCA100D9E9F5 /* RocketsListView.swift in Sources */,
 				16DCE5142881EAFE00D9E9F5 /* LocalizedStringKey+keys.swift in Sources */,
 				16F3402B28831BB4001E5168 /* RocketDetail.swift in Sources */,
+				16AF906628A95B450050649F /* RocketDTO.swift in Sources */,
 				16DCE5032881CE3500D9E9F5 /* Rocket+instances.swift in Sources */,
 				16F3402928831BA3001E5168 /* Stage.swift in Sources */,
 				16F3403928833A76001E5168 /* StageView.swift in Sources */,
@@ -516,7 +538,9 @@
 				16F34023288315B0001E5168 /* RocketDetailViewModel.swift in Sources */,
 				16AF906028A955030050649F /* HttpMethod.swift in Sources */,
 				16DCE4BE2881C93D00D9E9F5 /* SpaceXApp.swift in Sources */,
+				16AF906C28A9625A0050649F /* DTOProtocol.swift in Sources */,
 				16F34041288345FB001E5168 /* Photo.swift in Sources */,
+				160AF48D28A970A800C31727 /* AppEnviroment.swift in Sources */,
 				16F34051288427A2001E5168 /* MotionState.swift in Sources */,
 				16F3401E288310CD001E5168 /* Loadable.swift in Sources */,
 				16F34043288347F1001E5168 /* SectionContainer.swift in Sources */,

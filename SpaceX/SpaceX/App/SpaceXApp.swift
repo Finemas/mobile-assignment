@@ -9,19 +9,13 @@ import SwiftUI
 
 @main
 struct SpaceXApp: App {
+    let appEnviroment: AppEnviroment = Constants.isDebug ? .debug : .live
+
     var body: some Scene {
         WindowGroup {
-            if Constants.isDebug {
-                RocketsListView(
-                    viewModel:
-                        RocketsListViewModel(
-                            rockets: .loaded(Rocket.all)
-                        )
-                )
-                
-            } else {
-                RocketsListView(viewModel: RocketsListViewModel())
-            }
+            RocketsListView(viewModel:
+                RocketsListViewModel(manager: appEnviroment.rocketsManager)
+            )
         }
     }
 }
