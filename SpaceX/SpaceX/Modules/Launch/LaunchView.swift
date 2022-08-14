@@ -29,9 +29,6 @@ struct LaunchView: View {
             viewModel.stopReceivingMotionData()
         }
     }
-}
-
-private extension LaunchView {
 
     @ViewBuilder
     var content: some View {

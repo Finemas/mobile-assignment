@@ -269,8 +269,8 @@
 		16DCE4EB2881CA1400D9E9F5 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				16F34048288412D5001E5168 /* MotionManager.swift */,
 				16AF906328A958D60050649F /* APIManager.swift */,
+				16F34048288412D5001E5168 /* MotionManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -329,8 +329,8 @@
 			isa = PBXGroup;
 			children = (
 				16AF906B28A9625A0050649F /* DTOProtocol.swift */,
-				16AF906528A95B450050649F /* RocketDTO.swift */,
 				160AF48E28A9730300C31727 /* RocketDetailDTO.swift */,
+				16AF906528A95B450050649F /* RocketDTO.swift */,
 				160AF49228A9778C00C31727 /* StageDTO.swift */,
 			);
 			path = API;
@@ -376,8 +376,8 @@
 		16F34054288427C3001E5168 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				16F34050288427A2001E5168 /* MotionState.swift */,
 				16F3401D288310CD001E5168 /* Loadable.swift */,
+				16F34050288427A2001E5168 /* MotionState.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";

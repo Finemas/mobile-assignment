@@ -30,9 +30,6 @@ struct RocketDetailView: View {
                 viewModel.fetchRocketDetail()
             }
     }
-}
-
-private extension RocketDetailView {
 
     @ViewBuilder
     var content: some View {
