@@ -38,7 +38,6 @@ extension LocalizedStringKey {
         static func engines(number: Int) -> LocalizedStringKey {
             "rocket_engines \(number)"
         }
-        // FIXME: 
         static func fuelTons(tons: Double) -> LocalizedStringKey {
             "rocket_fuel_tons \(tons)"
         }

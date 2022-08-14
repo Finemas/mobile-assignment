@@ -2,61 +2,59 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>rocket_engines %lld</key>
-    <dict>
-        <key>NSStringLocalizedFormatKey</key>
-        <string>%#@engines@</string>
-        <key>engines</key>
-        <dict>
-            <key>NSStringFormatSpecTypeKey</key>
-            <string>NSStringPluralRuleType</string>
-            <key>NSStringFormatValueTypeKey</key>
-            <string>lld</string>
-            <key>zero</key>
-            <string>žádný motory</string>
-            <key>one</key>
-            <string>1 motor</string>
-            <key>other</key>
-            <string>%d motorů</string>
-        </dict>
-    </dict>
-
-    <key>rocket_fuel_tons %lld</key>
-    <dict>
-        <key>NSStringLocalizedFormatKey</key>
-        <string>%#@tons@</string>
-        <key>tons</key>
-        <dict>
-            <key>NSStringFormatSpecTypeKey</key>
-            <string>NSStringPluralRuleType</string>
-            <key>NSStringFormatValueTypeKey</key>
-            <string>lld</string>
-            <key>zero</key>
-            <string>žádná tuna paliva</string>
-            <key>one</key>
-            <string>1 tuna paliva</string>
-            <key>other</key>
-            <string>%d tun paliva</string>
-        </dict>
-    </dict>
-
-    <key>rocket_burn_time %lld</key>
-    <dict>
-        <key>NSStringLocalizedFormatKey</key>
-        <string>%#@seconds@</string>
-        <key>seconds</key>
-        <dict>
-            <key>NSStringFormatSpecTypeKey</key>
-            <string>NSStringPluralRuleType</string>
-            <key>NSStringFormatValueTypeKey</key>
-            <string>lld</string>
-            <key>zero</key>
-            <string>Nula sekund doby hoření</string>
-            <key>one</key>
-            <string>1 sekunda doby hoření</string>
-            <key>other</key>
-            <string>%d sekund doby hoření</string>
-        </dict>
-    </dict>
+	<key>rocket_engines %lld</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@engines@</string>
+		<key>engines</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>žádný motory</string>
+			<key>one</key>
+			<string>1 motor</string>
+			<key>other</key>
+			<string>%d motorů</string>
+		</dict>
+	</dict>
+	<key>rocket_fuel_tons %lf</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@tons@</string>
+		<key>tons</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>llf</string>
+			<key>zero</key>
+			<string>žádná tuna paliva</string>
+			<key>one</key>
+			<string>1 tuna paliva</string>
+			<key>other</key>
+			<string>%d tun paliva</string>
+		</dict>
+	</dict>
+	<key>rocket_burn_time %lld</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@seconds@</string>
+		<key>seconds</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>Nula sekund doby hoření</string>
+			<key>one</key>
+			<string>1 sekunda doby hoření</string>
+			<key>other</key>
+			<string>%d sekund doby hoření</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
