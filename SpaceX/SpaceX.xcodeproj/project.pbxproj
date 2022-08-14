@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16AF905E28A954490050649F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF905D28A954490050649F /* APIService.swift */; };
+		16AF906028A955030050649F /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF905F28A955030050649F /* HttpMethod.swift */; };
+		16AF906228A9588E0050649F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF906128A9588E0050649F /* APIError.swift */; };
 		16DCE4BE2881C93D00D9E9F5 /* SpaceXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DCE4BD2881C93D00D9E9F5 /* SpaceXApp.swift */; };
 		16DCE4C22881C93E00D9E9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DCE4C12881C93E00D9E9F5 /* Assets.xcassets */; };
 		16DCE4C52881C93E00D9E9F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DCE4C42881C93E00D9E9F5 /* Preview Assets.xcassets */; };
@@ -62,6 +65,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16AF905D28A954490050649F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		16AF905F28A955030050649F /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		16AF906128A9588E0050649F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		16DCE4BA2881C93D00D9E9F5 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DCE4BD2881C93D00D9E9F5 /* SpaceXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXApp.swift; sourceTree = "<group>"; };
 		16DCE4C12881C93E00D9E9F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,6 +135,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16AF905C28A953EA0050649F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				16AF906128A9588E0050649F /* APIError.swift */,
+				16AF905D28A954490050649F /* APIService.swift */,
+				16AF905F28A955030050649F /* HttpMethod.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		16DCE4B12881C93D00D9E9F5 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +175,7 @@
 				16DCE4F32881CB1200D9E9F5 /* Mock */,
 				16DCE4E92881C9EF00D9E9F5 /* Models */,
 				16DCE4E72881C9C000D9E9F5 /* Modules */,
+				16AF905C28A953EA0050649F /* Services */,
 				16DCE4E82881C9DF00D9E9F5 /* SupportingFiles */,
 				16DCE5072881E75E00D9E9F5 /* Utils */,
 			);
@@ -476,6 +493,7 @@
 			files = (
 				16F3404728834AE8001E5168 /* AsyncImageWrapper.swift in Sources */,
 				16DCE5062881D0BE00D9E9F5 /* Date+.swift in Sources */,
+				16AF905E28A954490050649F /* APIService.swift in Sources */,
 				16F34031288323CE001E5168 /* Constants.swift in Sources */,
 				16F3404D288413B4001E5168 /* LaunchView.swift in Sources */,
 				16F34049288412D5001E5168 /* MotionManager.swift in Sources */,
@@ -483,6 +501,7 @@
 				16DCE5092881E76900D9E9F5 /* Icons.swift in Sources */,
 				16DCE5012881CCC500D9E9F5 /* RocketsListViewModel.swift in Sources */,
 				16DCE50B2881E8D800D9E9F5 /* RocketCell.swift in Sources */,
+				16AF906228A9588E0050649F /* APIError.swift in Sources */,
 				16F34033288325F3001E5168 /* BoxText.swift in Sources */,
 				16F3402728831B8D001E5168 /* Parameter.swift in Sources */,
 				16DCE4FE2881CCA100D9E9F5 /* RocketsListView.swift in Sources */,
@@ -495,6 +514,7 @@
 				16F3402528831B79001E5168 /* Measurement.swift in Sources */,
 				16F34021288315A5001E5168 /* RocketDetailView.swift in Sources */,
 				16F34023288315B0001E5168 /* RocketDetailViewModel.swift in Sources */,
+				16AF906028A955030050649F /* HttpMethod.swift in Sources */,
 				16DCE4BE2881C93D00D9E9F5 /* SpaceXApp.swift in Sources */,
 				16F34041288345FB001E5168 /* Photo.swift in Sources */,
 				16F34051288427A2001E5168 /* MotionState.swift in Sources */,
