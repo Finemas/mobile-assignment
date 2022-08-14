@@ -26,7 +26,9 @@ struct StageView: View {
             rowFactory(image: Icons.reusable.rawValue, text: reusable)
             rowFactory(image: Icons.engine.rawValue, text: .RocketDetail.engines(number: stage.engines))
             rowFactory(image: Icons.fuel.rawValue, text: .RocketDetail.fuelTons(tons: stage.fuelAmount))
-            rowFactory(image: Icons.reusable.rawValue, text: .RocketDetail.burnTime(seconds: stage.burnTime))
+            if let burnTime = stage.burnTime {
+                rowFactory(image: Icons.reusable.rawValue, text: .RocketDetail.burnTime(seconds: burnTime))
+            }
         }
         .padding()
         .background(.gray.opacity(0.1))

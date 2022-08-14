@@ -13,5 +13,5 @@ struct Stage {
     // Amount of fuel in tons
     let fuelAmount: Double
     // Burn time in seconds
-    let burnTime: Int
+    let burnTime: Int?
 }

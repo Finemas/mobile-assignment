@@ -13,7 +13,7 @@ struct StageDTO: Decodable {
     // Amount of fuel in tons
     let fuelAmount: Double
     // Burn time in seconds
-    let burnTime: Int
+    let burnTime: Int?
 
     enum CodingKeys: String, CodingKey {
         case engines, reusable
