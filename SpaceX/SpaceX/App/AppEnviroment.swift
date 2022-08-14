@@ -13,7 +13,8 @@ extension AppEnviroment {
 
     var rocketsManager: RocketsManager {
         .init(
-            getRockets: apiManager.getRockets
+            getRockets: apiManager.getRockets,
+            getRocketDetail: apiManager.getRocketDetail
         )
     }
 }

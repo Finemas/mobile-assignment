@@ -7,4 +7,5 @@
 
 struct RocketsManager {
     var getRockets: () async throws -> [Rocket]
+    var getRocketDetail: (String) async throws -> RocketDetail
 }

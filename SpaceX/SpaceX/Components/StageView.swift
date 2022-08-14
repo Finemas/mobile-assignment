@@ -12,7 +12,7 @@ struct StageView: View {
     let stage: Stage
 
     var reusable: LocalizedStringKey {
-        stage.reuasable
+        stage.reusable
             ? .RocketDetail.reusable
             : .RocketDetail.notReusable
     }
@@ -53,7 +53,7 @@ struct StageView_Previews: PreviewProvider {
             title: "First Stage",
             stage: Stage(
                 engines: 9,
-                reuasable: true,
+                reusable: true,
                 fuelAmount: 385,
                 burnTime: 162
             )

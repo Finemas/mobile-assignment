@@ -9,7 +9,7 @@ import Combine
 
 @MainActor
 class RocketsListViewModel: ObservableObject {
-    @Published var rockets: Loadable<[Rocket], Error>
+    @Published var rockets: Loadable<[Rocket], Error> = .notRequested
     @Published var searchText = ""
 
     var filteredRockets: [Rocket] {
@@ -26,10 +26,7 @@ class RocketsListViewModel: ObservableObject {
 
     let manager: RocketsManager
 
-    init(
-        manager: RocketsManager,
-        rockets: Loadable<[Rocket], Error> = .notRequested
-    ) {
+    init(manager: RocketsManager ) {
         self.manager = manager
         self.rockets = rockets
     }

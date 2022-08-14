@@ -83,8 +83,7 @@ private extension RocketsListView {
 struct RocketsListView_Previews: PreviewProvider {
     static var previews: some View {
         let vm = RocketsListViewModel(
-            manager: .init(getRockets: { return [] }),
-            rockets: .loaded(Rocket.all)
+            manager: AppEnviroment.debug.rocketsManager
         )
         RocketsListView(viewModel: vm)
     }

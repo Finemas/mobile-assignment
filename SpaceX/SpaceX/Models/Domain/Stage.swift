@@ -9,7 +9,7 @@ struct Stage {
     // Number of engines
     let engines: Int
     // If is reusable again
-    let reuasable: Bool
+    let reusable: Bool
     // Amount of fuel in tons
     let fuelAmount: Int
     // Burn time in seconds

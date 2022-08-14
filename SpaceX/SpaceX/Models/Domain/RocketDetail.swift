@@ -5,8 +5,6 @@
 //  Created by Jan Provaznik on 16.07.2022.
 //
 
-import Foundation
-
 // Richer model of rocket
 struct RocketDetail {
     // Rocket ID

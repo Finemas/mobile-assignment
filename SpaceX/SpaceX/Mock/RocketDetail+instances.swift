@@ -35,13 +35,13 @@ extension RocketDetail {
         ],
         firstStage: Stage(
             engines: 9,
-            reuasable: true,
+            reusable: true,
             fuelAmount: 385,
             burnTime: 162
         ),
         secondStage: Stage(
             engines: 1,
-            reuasable: false,
+            reusable: false,
             fuelAmount: 90,
             burnTime: 397
         ),

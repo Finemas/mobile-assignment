@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		160AF48B28A96AAD00C31727 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AF48A28A96AAD00C31727 /* String+.swift */; };
 		160AF48D28A970A800C31727 /* AppEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AF48C28A970A800C31727 /* AppEnviroment.swift */; };
+		160AF48F28A9730300C31727 /* RocketDetailDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AF48E28A9730300C31727 /* RocketDetailDTO.swift */; };
+		160AF49328A9778C00C31727 /* StageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AF49228A9778C00C31727 /* StageDTO.swift */; };
 		16AF905E28A954490050649F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF905D28A954490050649F /* APIService.swift */; };
 		16AF906028A955030050649F /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF905F28A955030050649F /* HttpMethod.swift */; };
 		16AF906228A9588E0050649F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF906128A9588E0050649F /* APIError.swift */; };
@@ -73,6 +75,8 @@
 /* Begin PBXFileReference section */
 		160AF48A28A96AAD00C31727 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		160AF48C28A970A800C31727 /* AppEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnviroment.swift; sourceTree = "<group>"; };
+		160AF48E28A9730300C31727 /* RocketDetailDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailDTO.swift; sourceTree = "<group>"; };
+		160AF49228A9778C00C31727 /* StageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageDTO.swift; sourceTree = "<group>"; };
 		16AF905D28A954490050649F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		16AF905F28A955030050649F /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		16AF906128A9588E0050649F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
@@ -324,8 +328,10 @@
 		16DCE4F82881CC5200D9E9F5 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				16AF906528A95B450050649F /* RocketDTO.swift */,
 				16AF906B28A9625A0050649F /* DTOProtocol.swift */,
+				16AF906528A95B450050649F /* RocketDTO.swift */,
+				160AF48E28A9730300C31727 /* RocketDetailDTO.swift */,
+				160AF49228A9778C00C31727 /* StageDTO.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -525,6 +531,7 @@
 				16AF906228A9588E0050649F /* APIError.swift in Sources */,
 				16F34033288325F3001E5168 /* BoxText.swift in Sources */,
 				16F3402728831B8D001E5168 /* Parameter.swift in Sources */,
+				160AF48F28A9730300C31727 /* RocketDetailDTO.swift in Sources */,
 				16DCE4FE2881CCA100D9E9F5 /* RocketsListView.swift in Sources */,
 				16DCE5142881EAFE00D9E9F5 /* LocalizedStringKey+keys.swift in Sources */,
 				16F3402B28831BB4001E5168 /* RocketDetail.swift in Sources */,
@@ -540,6 +547,7 @@
 				16DCE4BE2881C93D00D9E9F5 /* SpaceXApp.swift in Sources */,
 				16AF906C28A9625A0050649F /* DTOProtocol.swift in Sources */,
 				16F34041288345FB001E5168 /* Photo.swift in Sources */,
+				160AF49328A9778C00C31727 /* StageDTO.swift in Sources */,
 				160AF48D28A970A800C31727 /* AppEnviroment.swift in Sources */,
 				16F34051288427A2001E5168 /* MotionState.swift in Sources */,
 				16F3401E288310CD001E5168 /* Loadable.swift in Sources */,
