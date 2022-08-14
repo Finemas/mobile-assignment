@@ -11,7 +11,7 @@ struct StageDTO: Decodable {
     // If is reusable again
     let reusable: Bool
     // Amount of fuel in tons
-    let fuelAmount: Int
+    let fuelAmount: Double
     // Burn time in seconds
     let burnTime: Int
 

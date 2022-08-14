@@ -26,6 +26,9 @@ struct RocketDetailView: View {
                     }
                 }
             }
+            .onAppear {
+                viewModel.fetchRocketDetail()
+            }
     }
 }
 
@@ -136,7 +139,7 @@ struct RocketDetail_Previews: PreviewProvider {
     static var previews: some View {
         let vm = RocketDetailViewModel(
             rocket: .falcon9,
-            rocketDetail: .loaded(.falcon9)
+            manager: AppEnviroment.debug.rocketsManager
         )
         RocketDetailView(viewModel: vm)
     }

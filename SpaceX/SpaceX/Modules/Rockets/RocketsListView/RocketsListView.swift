@@ -19,9 +19,6 @@ struct RocketsListView: View {
                 }
         }
     }
-}
-
-private extension RocketsListView {
 
     @ViewBuilder
     var content: some View {
@@ -52,16 +49,11 @@ private extension RocketsListView {
 
     func rocketCell(_ rocket: Rocket) -> some View {
         NavigationLink {
-            if Constants.isDebug {
-                let vm = RocketDetailViewModel(
-                    rocket: .falcon9,
-                    rocketDetail: .loaded(.falcon9)
-                )
-                RocketDetailView(viewModel: vm)
-            } else {
-                let vm = RocketDetailViewModel(rocket: rocket)
-                RocketDetailView(viewModel: vm)
-            }
+            let vm = RocketDetailViewModel(
+                rocket: rocket,
+                manager: viewModel.manager
+            )
+            RocketDetailView(viewModel: vm)
         } label: {
             RocketCell(rocket: rocket)
         }

@@ -59,6 +59,18 @@ extension RocketDetailDTO: DTOProtocol {
                     name: "height",
                     metric: height.meters,
                     imperial: height.feet
+                ),
+                Parameter(
+                    type: .length,
+                    name: "diameter",
+                    metric: diameter.meters,
+                    imperial: diameter.feet
+                ),
+                Parameter(
+                    type: .mass,
+                    name: "mass",
+                    metric: mass.kg,
+                    imperial: mass.lb
                 )
             ],
             firstStage: firstStage.domain,
