@@ -14,6 +14,9 @@ struct RocketsListView: View {
         NavigationView {
             content
                 .navigationTitle(.RocketsListView.title)
+                .onAppear {
+                    viewModel.fetchRockets()
+                }
         }
     }
 }
@@ -80,6 +83,7 @@ private extension RocketsListView {
 struct RocketsListView_Previews: PreviewProvider {
     static var previews: some View {
         let vm = RocketsListViewModel(
+            manager: .init(getRockets: { return [] }),
             rockets: .loaded(Rocket.all)
         )
         RocketsListView(viewModel: vm)
