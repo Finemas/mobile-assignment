@@ -14,6 +14,7 @@ struct RocketsListView: View {
         NavigationView {
             content
                 .navigationTitle(.RocketsListView.title)
+                .searchable(text: $viewModel.searchText)
                 .onAppear {
                     viewModel.fetchRockets()
                 }
@@ -27,11 +28,7 @@ struct RocketsListView: View {
             LoadingView()
 
         case .loaded:
-            if viewModel.filteredRockets.isEmpty {
-                emptyView
-            } else {
-                rocketsList
-            }
+            rocketsList
 
         case let .failed(error):
             Text(error.localizedDescription)
@@ -44,7 +41,7 @@ struct RocketsListView: View {
                 rocketCell(rocket)
             }
         }
-        .searchable(text: $viewModel.searchText)
+        .overlay(emptyView)
     }
 
     func rocketCell(_ rocket: Rocket) -> some View {
@@ -59,16 +56,19 @@ struct RocketsListView: View {
         }
     }
 
+    @ViewBuilder
     var emptyView: some View {
-        VStack {
-            Spacer()
+        if viewModel.filteredRockets.isEmpty {
+            VStack {
+                Spacer()
 
-            Text(.RocketsListView.noRockets)
-                .multilineTextAlignment(.center)
+                Text(.RocketsListView.noRockets)
+                    .multilineTextAlignment(.center)
 
-            Spacer()
-            Spacer()
-        }.padding(.horizontal)
+                Spacer()
+                Spacer()
+            }.padding(.horizontal)
+        }
     }
 }
 
